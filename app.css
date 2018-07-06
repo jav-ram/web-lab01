@@ -1,0 +1,76 @@
+body {
+    background: papayawhip;
+    display: flex;
+    flex-direction: column; 
+    margin: 0;
+}
+
+.header {
+    background: purple;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    margin: 0;
+}
+
+.home {
+    display: flex;
+    background: black;
+    flex-direction: row;
+    height: 100vh;
+    padding: 0 85px;
+}
+
+.home .left {
+    background: red;
+    width: 60%;
+}
+
+.home .right {
+    background: blue;
+    width: 40%;
+}
+
+.content {
+    background: greenyellow;
+    display: flex;
+    flex-direction: column;
+    padding: 0 85px;
+}
+
+.temas-contenedor {
+    background: blueviolet;
+    display: flex;
+    flex-direction: row;
+    
+    height: 120vh;
+}
+
+.temas-contenedor .temas {
+    background: cornflowerblue;
+    width: 35%;
+}
+
+.temas-contenedor .info {
+    background: tomato;
+    width: 65%;
+}
+
+.quote-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    background: wheat;
+    display: inline;
+    width: 100%;
+    height: 450px;
+    margin: 75px 0px;
+}
+
+.learn {
+    background: orangered;
+    height: 75vh;
+}
