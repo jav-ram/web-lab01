@@ -6,19 +6,121 @@ body {
 }
 
 .header {
-    background: purple;
+    background: #171e27;
     display: flex;
     flex-direction: row;
     height: 70px;
     margin: 0;
+    padding: 0 19%;
 }
+
+.header .header-left {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.header .header-left .header-logo {
+    margin: 16px 0px;
+}
+
+.header .header-left .learn {
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    padding-left: 40px;
+    text-decoration: unset;
+}
+
+.header .header-left .learn:hover .text {
+    opacity: 1;
+}
+
+.header-left .learn .text {
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 0rem 0.25rem;
+    font-weight: 400;
+    transition: 0.3ms
+}
+
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+}
+
+.header-right .search-bar { 
+    background: #232c3b;
+    border: 0;
+    border-radius: 3px 0px 0px 3px;
+    color: white;
+    opacity: 1;
+    
+    padding-left: 0.5rem; 
+    margin: 0;
+    font-size: 10pt;
+    height: 30px;
+    width: 250px;
+}
+::placeholder{
+    color: white;
+    opacity: 0.6;
+    font-weight: 400;
+}
+
+.header-right .search-button { 
+    display: flex;
+    align-items: center;
+    background: #232c3b;  
+    border-radius: 0px 3px 3px 0px; 
+    color: white;
+    margin: 0;
+    border: 0;
+    font-size: 18pt;
+    height: 32px;
+}
+
+.header-right .search-button:hover {
+    background: #4786ff;
+}
+
+
+
+
+.header-right .pro {
+    border: 0;
+    border-radius: 0.2rem;
+    background: #409b6b;
+    color: hsl(0, 0%, 100%, 0.9); 
+    font-size: 14px;
+    height: 34px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 15px;
+}
+
+.header-right .pro:hover {
+    background: #33b16e;
+    color: hsl(0, 0%, 100%, 1);
+}
+
+
 
 .home {
     display: flex;
     background: black;
     flex-direction: row;
-    height: 100vh;
-    padding: 0 85px;
+    height: 650px;
+    padding: 0 19%;
 }
 
 .home .left {
@@ -35,7 +137,7 @@ body {
     background: greenyellow;
     display: flex;
     flex-direction: column;
-    padding: 0 85px;
+    padding: 0 19%;
 }
 
 .temas-contenedor {
@@ -43,7 +145,7 @@ body {
     display: flex;
     flex-direction: row;
     
-    height: 120vh;
+    height: 750px;
 }
 
 .temas-contenedor .temas {
@@ -66,7 +168,7 @@ body {
     background: wheat;
     display: inline;
     width: 100%;
-    height: 450px;
+    height: 39vh;
     margin: 75px 0px;
 }
 
