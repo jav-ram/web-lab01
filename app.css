@@ -5,6 +5,11 @@ body {
     margin: 0;
 }
 
+button {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 .header {
     background: #171e27;
     display: flex;
@@ -56,6 +61,7 @@ body {
     flex-direction: row;
     width: 50%;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .header-right .search-bar { 
@@ -113,20 +119,84 @@ body {
     color: hsl(0, 0%, 100%, 1);
 }
 
+.header-right .sign-in {
+    border: 0;
+    border-radius: 0.2rem;
+    background: transparent;
+    color: hsl(0, 0%, 100%, 0.8); 
+    font-size: 14px;
+    height: 34px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 15px;
+}
+
+.header-right .sign-in:hover {
+    color: hsl(0, 0%, 100%, 1);
+}
+
 
 
 .home {
     display: flex;
-    background: black;
+    background-image: linear-gradient(170deg, rgb(33, 42, 57) 0%, rgb(24, 30, 40) 100%);
+    padding: 30px 15px 60px;
     flex-direction: row;
     height: 650px;
     padding: 0 19%;
 }
 
 .home .left {
-    background: red;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding: 0;
     width: 60%;
 }
+
+.home .left .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.home .left .title {
+    font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    color: white;
+    font-size: 48px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    padding-right: 70px;
+}
+
+.home .left .subtitle {
+    font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+    color: hsl(0, 0%, 100%, 0.6);
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0.75rem 0rem 1.25rem 0rem;
+    margin-bottom: 50px;
+    padding: 0rem 0rem;
+
+}
+
+.home .left .start {
+    border: 0;
+    border-radius: 0.3rem;
+    color: hsl(0, 0%, 100%, 0.9);
+    font-size: 14px;
+    height: 48px;
+    background: rgb(137, 86, 14);
+    width: 16rem;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+    min-width: 180px;
+    margin: 15px 0;
+}
+
 
 .home .right {
     background: blue;
