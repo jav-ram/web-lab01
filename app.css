@@ -407,7 +407,7 @@ button {
     display: flex;
     flex-direction: row;
     background: transparent;
-    padding: 75px 50px;
+    padding: 75px 50px 0px 50px;
     height: 75%;
 }
 
@@ -447,4 +447,9 @@ button {
     justify-content: flex-end;
     width: 50%;
     height: 100%;
+}
+
+.footer {
+    background: #171e27;;
+    height: 700px;
 }
