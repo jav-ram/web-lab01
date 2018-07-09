@@ -64,7 +64,7 @@ button {
     margin: 16px 0px;
 }
 
-.header .header-left .learn {
+.header .header-left .learn-header {
     display: flex;
     flex-direction: row;
     background: transparent;
@@ -72,11 +72,11 @@ button {
     text-decoration: unset;
 }
 
-.header .header-left .learn:hover .text {
+.header .header-left .learn-header:hover .text {
     opacity: 1;
 }
 
-.header-left .learn .text {
+.header-left .learn-header .text {
     color: white;
     opacity: 0.9;
     text-align: center;
@@ -357,7 +357,7 @@ button {
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
-    height: 39vh;
+    height: 375px;
     padding: 64px 96px;
     max-width: 74rem;
     align-content: center;
@@ -367,7 +367,7 @@ button {
 }
 
 .quote .image {
-    height: 20%;
+    width: 50px;
     margin-bottom: 18px;
 }
 
@@ -390,19 +390,61 @@ button {
 
 .quote .author .image {
     margin: 15px 0px;
-    height: 100%;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
 }
 
 .quote .author .text {
     height: 100%;
-    width: fit-content;
+    width: auto;
     text-align: start;
     font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
     font-size: 15px;
 }
 
 .learn {
-    background: orangered;
-    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    padding: 75px 50px;
+    height: 75%;
+}
+
+.learn .left {
+    width: 50%;
+    height: 100%;
+    padding-right: 100px;
+}
+
+.learn .left .title {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.learn .left .learn-content {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 50px;
+}
+
+.learn .left .create-free-account {
+    font-size: 14px;
+    height: 48px;
+    line-height: 20px;
+    background: #409b6b;
+    border: 0px;
+    border-radius: 0.3rem;
+    color: hsl(0, 0%, 100%, 0.9);
+    letter-spacing: 1px;
+    padding: 8px 23px
+}
+
+.learn .right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
 }
